@@ -2,9 +2,9 @@
 I am creating a game trivia using ruby as my primary language
 
 It will have some of the following functionalities:
-    - I am making a game trivia program
-    - It will have to have a scoring system using int
-    - Scoring system is based on the questions that
+- I am making a game trivia program
+- It will have to have a scoring system using int
+- Scoring system is based on the questions that
       were answered correctly in the trivia
     - Will have to implement a while loop that will
       handle the game to continue [might be an infinite loop]
