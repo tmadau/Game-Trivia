@@ -1,5 +1,8 @@
 # Game-Trivia
-I am creating a game trivia using ruby as my primary language
+I am creating a game trivia using ruby as my primary language.
+It is just a simple game which will use text to compare answer
+and tells you if you got the answer right or wrong. For now it 
+is nothing to fancy and the code is not that clean.
 
 It will have some of the following functionalities:
 - I am making a game trivia program.
