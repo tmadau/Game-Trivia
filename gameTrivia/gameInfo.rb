@@ -1,3 +1,4 @@
+# info.rb
 welcome = <<EOM
 -------------------------------------------
 \\          Welcome to Game-Trivia         /
@@ -8,13 +9,10 @@ welcome = <<EOM
 -------------------------------------------
 EOM
 
-puts welcome
-typed = gets.chomp
-
 correct = <<EOM
 \e[H\e[2J
 -------------------------------------------
-[ correct ✅ \a                             ]
+[ correct ✅                              ]
 -------------------------------------------
 EOM
 
@@ -45,28 +43,10 @@ what was JavaScript originally called?
 -------------------------------------------
 EOM
 
-case typed
-when "c", "continue", "proceed"
-    puts "question 1: "
-    puts q1
-    a1 = gets.chomp
-    if a1 == "south africa"
-      puts correct
-    elsif a1 != "south africa"
-      puts wrong
+class GameInfo
+    def initialize
+        puts "this is a class initializer"
     end
-    puts "question 2: "
-    puts q2
-    a2 = gets.chomp
-    puts a2 == "ruby" ? correct : wrong
-    puts q3
-    a3 = gets.chomp
-    puts a3 == "LiveScript" ? correct : wrong
-    exit
-when "continue"
-when "exit", "x", "e"
-    puts "game exited: "
-    exit
-else ""
-    puts "unrecognized input"
 end
+
+_gameInfo = GameInfo.new
